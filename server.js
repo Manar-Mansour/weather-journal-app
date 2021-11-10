@@ -31,6 +31,6 @@ app.get('/all', (req, res)=> {
   console.log(projectData);//to check
 });
 // Setup Server
-const port = 3000;
+const port = process.env.PORT ||3000;
 const server = app.listen(port, ()=>{console.log(`running on http://localhost:${port}`)});
 
